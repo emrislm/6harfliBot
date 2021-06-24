@@ -13,6 +13,9 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
     console.log('bot yasiyor!!');
+    client.user.setActivity('korona | ::bugun', { 
+        type: 'WATCHING',
+    });
 });
 
 client.on('message', async message => {
